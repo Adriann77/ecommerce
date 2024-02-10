@@ -13,5 +13,8 @@
         "front-end": "npm run dev --workspace=front-end",
         "back-end": "npm run dev --workspace=back-end",
         "dev": "npm-run-all --parallel front-end back-end"
+    },
+    "devDependencies": {
+        "sass": "^1.70.0"
     }
 }
