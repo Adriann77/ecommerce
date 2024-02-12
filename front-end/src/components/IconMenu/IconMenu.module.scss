@@ -3,15 +3,15 @@
 	gap: 1rem;
 	padding: 1rem;
 
-    li{
-        position: relative;
-    }
+	li {
+		position: relative;
+	}
 }
 
 .numberOfProducts {
-    position: absolute;
-    bottom: -0.5rem;
-    right: -0.5rem;
+	position: absolute;
+	bottom: -0.5rem;
+	right: -0.5rem;
 
 	background-color: var(--color-yellow);
 	width: 1.25rem;
@@ -23,4 +23,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
