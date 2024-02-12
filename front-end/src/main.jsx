@@ -3,12 +3,12 @@ import "./styles/globals.scss"
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { MainPage } from "./views/MainPage/MainPage.jsx";
+import { Favourites } from "./views/Favourites/Favourites.jsx";
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
+		element: <Favourites />,
 	},
 ]);
 
