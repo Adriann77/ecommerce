@@ -14,7 +14,7 @@ export const CartSummary = ({ products }) => {
     
 
 
-	const totalCost = sum > minSumForFreeDelivery ? sum : sum + deliveryCost;
+	const totalCost = sum >= minSumForFreeDelivery ? sum : sum + deliveryCost;
 
 	return (
 		<div className={styles.cartSummary}>
@@ -25,7 +25,7 @@ export const CartSummary = ({ products }) => {
 			</div>
 			<div className={styles.cartRow}>
 				<p>Koszt dostawy:</p>
-				<p>{totalCost > 500 ? 'Bezpłatna' : deliveryCost}</p>
+				<p>{sum >= 500 ? 'Bezpłatna' : deliveryCost}</p>
 			</div>
 			<div className={`${styles.cartRow} ${styles.cartSummaryRow}`}>
 				<p>Do zapłaty:</p>
