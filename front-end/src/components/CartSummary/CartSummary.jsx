@@ -10,9 +10,7 @@ export const CartSummary = ({ products }) => {
 	let sum = 0;
 	products.forEach(product => {
 		sum += product.pricePLN;
-    });
-    
-
+	});
 
 	const totalCost = sum >= minSumForFreeDelivery ? sum : sum + deliveryCost;
 

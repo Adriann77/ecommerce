@@ -1,15 +1,16 @@
-import "./styles/theme.scss"
-import "./styles/globals.scss"
+import './styles/theme.scss';
+import './styles/globals.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { Cart } from "./views/Cart/Cart.jsx";
+
+import { ProductList } from './views/ProductList/ProductList.jsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Cart />,
+		element: <ProductList />,
 	},
 ]);
 
