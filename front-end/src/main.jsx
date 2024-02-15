@@ -5,12 +5,15 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
-import { ProductList } from './views/ProductList/ProductList.jsx';
+
+import { ProductDetails } from './views/ProductDetails/ProductDetails.jsx';
+
+
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <ProductList />,
+		element: <ProductDetails/>
 	},
 ]);
 
