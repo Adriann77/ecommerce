@@ -3,17 +3,24 @@ import './styles/globals.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
-
-
-import { ProductDetails } from './views/ProductDetails/ProductDetails.jsx';
-
-
+import { Cart } from './views/Cart/Cart.jsx';
+import { Favourites } from './views/Favourites/Favourites.jsx';
+import { Layout } from './components/Layout/Layout.jsx';
 
 const router = createBrowserRouter([
 	{
-		path: '/',
-		element: <ProductDetails/>
+		path: '',
+		element: <Layout />,
+		children: [
+			{
+				path: '/koszyk',
+				element: <Cart />,
+			},
+			{
+				path: '/ulubione',
+				element: <Favourites />,
+			},
+		],
 	},
 ]);
 
